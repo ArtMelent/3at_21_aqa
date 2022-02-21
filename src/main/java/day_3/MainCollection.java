@@ -39,8 +39,7 @@ public class MainCollection {
         Set<Integer> uniqueSet = new HashSet<>();
         for (int i2=0; i2<collection2.size();i2++){
             System.out.println();
-            int j2;
-            for (j2 = 0; j2<collection2.get(i2).size(); j2++){
+            for (int j2 = 0; j2<collection2.get(i2).size(); j2++){
                 if(uniqueSet.contains(collection2.get(i2).get(j2))){
                     collection2.get(i2).set(j2,0);
                 }else{
