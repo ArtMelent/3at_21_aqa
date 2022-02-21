@@ -12,10 +12,10 @@ public class MainMap {
         String text = "3) Given: String with big text (more than 1000 words)." +
                 " Write a method that calculates the numbers of words for each letter that starts the word.\n";
         Map<Character,Integer> res = new HashMap<>();
-        for (String w:text.split( regex: " ")){
+        for (String w:text.split( " ")){
             res.putIfAbsent(w.charAt(0),0);
             res.put(w.charAt(0), res.get(w.charAt(0))+1);
         }
-        System.out.println(new TreeMap<>res);
+        System.out.println(new TreeMap<>(res));
     }
 }

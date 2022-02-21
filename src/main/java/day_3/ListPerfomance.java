@@ -26,16 +26,14 @@ public class ListPerfomance {
         Random rand = new Random();
         for (int i=0; i<1000; i++){
             int length =
-            list1.get(rand.nextInt( bound: list1.size()-1)).length();
+            list1.get(rand.nextInt( list1.size()-1)).length();
         }
         return new Date().getTime()-start;
     }
     private static long checkSort(List<String> list) {
         long start=new Date().getTime();
-        Random rand = new Random();
-        for (int i=0; i<1000; i++){
-            int length =
-            list.sort(rand.nextInt( bound: list.size()-1), UUID.randomUUID().toString();
+        for (int i=0; i<100000; i++){
+            list.add(UUID.randomUUID().toString());
         }
         return new Date().getTime()-start;
     }

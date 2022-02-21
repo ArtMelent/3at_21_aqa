@@ -1,5 +1,7 @@
 package day_2;
 
+import day_3.exeption.DivByZeroExeption;
+
 public class Calculator {
     public static void main(String[] args) {
         int a=1;
@@ -22,7 +24,12 @@ public class Calculator {
         return a*b;
     }
 
-    private static int divide(int a, int b) {
+    public static int divide(int a, int b) {
+        if (b==0) try {
+            throw new DivByZeroExeption();
+        } catch (DivByZeroExeption e) {
+            e.printStackTrace();
+        }
         return a/b;
     }
 }
