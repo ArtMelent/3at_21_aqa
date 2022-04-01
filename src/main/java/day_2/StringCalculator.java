@@ -2,7 +2,7 @@ package day_2;
 
 public class StringCalculator {
     public static void main(String[] args) {
-        //Task 2. Given a string, find the number of words in it.
+    w    //Task 2. Given a string, find the number of words in it.
         String s = "Task 2. Given a string, find the number of words in it.";
 
         System.out.println(s.split( " ").length);
