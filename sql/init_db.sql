@@ -1,7 +1,6 @@
 CREATE SCHEMA `3at_21`;
 
 USE 3at_21;
-
 CREATE TABLE `3at_21`.`student`(
     `id_student` INT NOT NULL,
     `name` VARCHAR(45) NULL,
@@ -14,3 +13,9 @@ CREATE TABLE `3at_21`.`address` (
   `country` VARCHAR(45) NULL,
   `city` VARCHAR(45) NULL,
   PRIMARY KEY (`id_address`));
+
+CREATE TABLE `aqa_3AT_21`.`address_student` (
+`id_address_student` INT NOT NULL,
+`id_address` VARCHAR(45) NULL,
+`id_student` VARCHAR(45) NULL,
+PRIMARY KEY (`id_address_student`));

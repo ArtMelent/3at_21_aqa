@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="3at_21_aqa" />
+        <module name="qa" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="3at_21_aqa" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

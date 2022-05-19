@@ -15,7 +15,8 @@ public class StringCalculator {
         //Task 4. Create function which takes 2 parameters:
         //1st(String) – text; 2nd (int) - index of word. Function should return number of chars in word by its index in text
 
-        System.out.println(stringCalculator(s, i:5));
+        int i;
+        System.out.println(stringCalculator(s, i:))
     }
 
         static int stringCalculator(String s, int i){
